@@ -98,6 +98,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html {
+    font-size: 16px;
+  }
+   
+  body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1em;
+   color: #e2e3ed
+  }
+   
+  ul, 
+  ol {
+    list-style-type: none;  
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #e2e3ed;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+  }
+  
+
+  h3, 
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+  }
+   
+  p {
+    font-size: 1em;
+    line-height: 1.285em;
+  }
+   
+  img {
+   
+  }
+   
+  figure {
+   
+  }
+   
+  address {
+   font-size: 1em;
+   font-style: normal;
+  }
+   
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+aside {
+  background-color: #527158;
+}
+  #reviews {
+    background-color: #165540;
+    color: #e2e3ed;
+  }
+
+  footer {
+    background-color: #202322;
+    color: #e2e3ed
+  }
+
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0; /* added this after checking */
@@ -109,6 +181,7 @@ header, footer {
   align-items: center;
   flex-flow: row wrap;
 }
+
 header {
   padding: 15px 0;
 }
