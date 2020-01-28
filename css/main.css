@@ -381,6 +381,11 @@ aside {
 footer {
   flex-direction: column;
 }
+
+footer i {
+  font-size: 2em;
+}
+
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
