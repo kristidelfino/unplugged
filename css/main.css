@@ -172,6 +172,7 @@ textarea {
     width: 90%;
     margin: 50px 0;
   }
+
 aside {
   background-color: #527158;
 }
@@ -198,8 +199,13 @@ header, footer {
   flex-flow: row wrap;
 }
 
-header {
+footer {
+  text-align: center;
+}
+
+.header-homepage {
   padding: 15px 0;
+  min-height: 500px; 
   background: url('../img/hero-img.jpg') center no-repeat;
   background-size: cover;
 }
@@ -216,6 +222,12 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+}
+
+.header-secondary {
+  justify-content: space-around;
+  padding: 33px 0;
+  background: #202322;
 }
 
 header nav {
@@ -235,7 +247,6 @@ header nav ul {
 .hero-area {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-flow: row wrap;
 }
 
@@ -277,7 +288,6 @@ aside {
 #reviews {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-flow: row wrap;
 }
 
@@ -294,6 +304,30 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+#map figure {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#contact {
+  background-color: #2a423a;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .contact-content {
@@ -303,8 +337,15 @@ aside {
   flex-flow: row wrap;
 }
 
-.contact-content p{
+
+#contact h2 {
+  padding-left: 20px;
+}
+
+.contact-content div {
   margin: 0;
+  padding-left: 20px;
+  flex-basis: 100%;
 }
 
 #faq {
@@ -487,9 +528,10 @@ input[type=button] {
 
 /* Header */
 
-header {
+.header-secondary {
   justify-content: space-around;
   padding: 33px 0;
+  background: #202322;
 }
 
 header .content-wrapper {
@@ -511,13 +553,12 @@ header nav ul {
 
 header figure {
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 /* Hero Area */
 
+.hero-area {
+  min-height: 600px;
+}
 /* Aside */
 aside .content-wrapper {
     margin: 50px 0;
@@ -566,7 +607,7 @@ footer .content-wrapper {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 footer .contact {
@@ -579,24 +620,36 @@ footer .copyright {
 
 .mission-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-flow: row wrap;
     padding-top: 20px;
 }
 
-.mission-content p {
-    width: 45%;
+.mission-text {
+    flex-basis: 45%;
 }
 
 #contact .content-wrapper h2 {
-    width: 80%;
+    width: 100%;
+}
+
+#contact {
+  padding-left: 100px;
+  width: 100%;
 }
 
 .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-flow: row wrap;
 }
+
+.contact-content div {
+  flex-basis: 45%;
+}
+
 
 #faq .content-wrapper {
   justify-content: space-between;
@@ -631,7 +684,9 @@ footer .copyright {
       .hero-area h1 {
           width: 60%;
       }
-   
+      .hero-area {
+        min-height:775px;
+      }
       /* Aside */
       aside .content-wrapper {
           justify-content: space-around;
