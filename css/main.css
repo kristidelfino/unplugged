@@ -117,6 +117,7 @@ textarea {
     text-decoration: none;
     color: #e2e3ed;
   }
+
   h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
@@ -245,6 +246,12 @@ header nav ul {
   width: 100%;
 }
 
+header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
 .hero-area {
   display: flex;
   justify-content: center;
@@ -360,6 +367,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 #faq .content-wrapper {
@@ -383,7 +391,7 @@ footer {
 }
 
 footer i {
-  font-size: 2em;
+  font-size: 1.875em;
 }
 
 footer .content-wrapper {
@@ -393,6 +401,12 @@ footer .content-wrapper {
 
 footer p {
   margin: 0;
+}
+
+footer .social-icons p {
+  border-radius: 50px;
+  padding: 15px;
+  background-color: #527158;
 }
 
 footer .contact {
@@ -556,7 +570,12 @@ header nav {
 }
 
 header nav ul {
+  display: flex;
   justify-content: space-between;
+}
+
+header nav ul li {
+  padding: 15px;
 }
 
 .header-divider {
@@ -626,6 +645,10 @@ footer .contact {
   margin-bottom: 0;
 }
 
+footer .social-icons p {
+margin-left: 10px;
+}
+
 footer .copyright {
   width: 100%;
   }
@@ -664,11 +687,22 @@ footer .copyright {
 
 
 #faq .content-wrapper {
+  display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
+  
 }
 
 .faq-content {
-  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+}
+
+.question {
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 #faq h2 {
@@ -744,7 +778,15 @@ footer .copyright {
       }
    
       .faq-content {
-          flex-basis: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        flex-basis: 100%;
+      }
+      
+      .question {
+        width: 50%;
+        margin-bottom: 20px;
       }
    
   }
