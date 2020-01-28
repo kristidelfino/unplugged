@@ -140,11 +140,27 @@ textarea {
   }
    
   img {
-   
+   width: 100%;
   }
-   
+
   figure {
-   
+    margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #reviews figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
    
   address {
@@ -184,6 +200,8 @@ header, footer {
 
 header {
   padding: 15px 0;
+  background: url('../img/hero-img.jpg') center no-repeat;
+  background-size: cover;
 }
 
 header .content-wrapper {
@@ -225,6 +243,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-img.jpg') center no-repeat;
+  background-size: cover;
 }
 
 #features .features-items {
@@ -340,7 +360,35 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  text-align: center;
 }
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -461,6 +509,13 @@ header nav ul {
     display: none;
 }
 
+header figure {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 /* Hero Area */
 
 /* Aside */
@@ -560,6 +615,14 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px) {  
   /*Desktop styles here */  
+
+  header figure {
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
       .content-wrapper {
            max-width: 960px;
       }
