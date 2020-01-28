@@ -176,6 +176,7 @@ textarea {
 aside {
   background-color: #527158;
 }
+
   #reviews {
     background-color: #165540;
     color: #e2e3ed;
@@ -258,11 +259,17 @@ header nav ul {
   background-size: cover;
 }
 
+#features i {
+	font-size: 3.75em;
+   margin-bottom: 40px;
+}
+
 #features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 #features article {
